@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  height: 100vh;
+}
+
+/* ---- Editorial building blocks ---- */
+
+.eyebrow {
+  font-family: 'IBM Plex Sans', ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #8a1f11;
+}
+.dark .eyebrow {
+  color: #d9694a;
+}
+
+.byline {
+  font-family: 'IBM Plex Sans', ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #6e6a61;
+}
+.dark .byline {
+  color: #a39c8c;
+}
+
+.rule {
+  border-top: 1px solid #c9c2b4;
+}
+.dark .rule {
+  border-top: 1px solid #3a362c;
+}
+
+.rule-thick {
+  border-top: 3px solid #1b1a17;
+}
+.dark .rule-thick {
+  border-top: 3px solid #ece7da;
+}
+
+.dropcap::first-letter {
+  font-family: 'Newsreader', Georgia, serif;
+  float: left;
+  font-size: 3.4rem;
+  line-height: 0.85;
+  font-weight: 600;
+  padding-right: 0.5rem;
+  padding-top: 0.15rem;
+  color: #8a1f11;
+}
+.dark .dropcap::first-letter {
+  color: #d9694a;
+}
+
+.ql-editor {
+  font-size: 1.05rem;
+}
+
+.post-content {
+  font-family: 'Source Serif 4', Georgia, serif;
+}
+
+.post-content p {
+  margin-bottom: 0.5rem;
+}
+
+.post-content h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: 'Newsreader', Georgia, serif;
+  margin: 1.5rem 0;
+}
+.post-content h2 {
+  font-size: 1.4rem;
+  font-family: 'Newsreader', Georgia, serif;
+  margin: 1.5rem 0;
+}
+
+.post-content ul li {
+  margin: 1.15rem 0;
+  margin-left: 1.3rem;
+  list-style-type: circle;
+}
+
+.post-content ol li {
+  margin: 1.15rem 0;
+  margin-left: 1.3rem;
+  list-style-type: decimal;
+}
+
+.post-content a {
+  /* light blue */
+  color: rgb(73, 149, 199);
+  text-decoration: none;
+}
+
+.post-content a:hover {
+  text-decoration: underline;
+}
+
+.post-content pre {
+  background-color: rgb(30, 41, 59);
+  border: 1px solid rgb(61, 69, 83);
+  color: rgb(232, 231, 231);
+  white-space: pre-wrap;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.post-content code {
+  background-color: rgb(236, 236, 236);
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  font-size: 0.9rem;
+}
+
+.dark .post-content code {
+  background-color: rgb(30, 41, 59);
+  border: 1px solid rgb(61, 69, 83);
+}
